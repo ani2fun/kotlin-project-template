@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration scan="true" scanPeriod="1 seconds">
+
+    <!-- Spring Logs-->
+    <logger name="org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod" level="DEBUG"/>
+
+    <!-- EppApi logs -->
+    <logger name="app" level="DEBUG"/>
+    <logger name="domain" level="DEBUG"/>
+
+    <!--Incoming request headers -->
+    <logger name="org.springframework.web.filter.CommonsRequestLoggingFilter" level="DEBUG"/>
+
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} %magenta([%thread]) %highlight(%-5level) %logger{36}.%M - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <root level="INFO">
+        <appender-ref ref="STDOUT"/>
+    </root>
+
+</configuration>
