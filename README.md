@@ -1,4 +1,4 @@
-### This is WIP
+### Work in progress
 
 A sample template for structuring SpringBoot Kotlin web app with Modern Gradle practices.
 
