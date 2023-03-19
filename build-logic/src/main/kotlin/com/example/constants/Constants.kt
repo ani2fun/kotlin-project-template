@@ -10,6 +10,3 @@ const val KOTLIN_VERSION = "1.8"
 
 // https://en.wikipedia.org/wiki/UTF-8
 const val CHARACTER_ENCODING = "UTF-8"
-
-// example maven central URL
-const val MAVEN_ARTIFACTORY_URL = "https://artifactory.example.io/artifactory/maven-group"
