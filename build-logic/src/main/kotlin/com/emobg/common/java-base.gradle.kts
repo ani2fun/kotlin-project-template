@@ -1,7 +1,6 @@
 package com.example.common
 
 import com.example.constants.CHARACTER_ENCODING
-import com.example.constants.MAVEN_ARTIFACTORY_URL
 import com.example.constants.JDK_VERSION
 
 plugins {
@@ -12,12 +11,6 @@ plugins {
 repositories {
     // Use Maven Central for resolving dependencies.
     mavenCentral()
-
-    // Use Embog maven central for resolving dependencies.
-    maven(MAVEN_ARTIFACTORY_URL) {
-        credentials.username = System.getenv("ARTIFACTORY_READ_USERNAME")
-        credentials.password = System.getenv("ARTIFACTORY_READ_PASSWORD")
-    }
 }
 
 java {
